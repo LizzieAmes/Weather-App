@@ -54,17 +54,17 @@ header {
 main {
   display: flex;
 }
-
+/* Container for recent searches */
 .left-container {
   margin: 30px;
   text-align: center;
 }
-
+/* Container for current weather forecast */
 .center-container {
   margin: 30px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  
   
 }
 
@@ -94,11 +94,17 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: rgb(37, 37, 37); 
+  background-color: #7bc6f1;
+  color: white;
+  font-size: 30px;
+  border: 1px solid #ddd; 
+  border-radius: 10px; 
+  padding-left: 100px; 
+  padding-right: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 10px; 
   text-align: center;
-  margin-bottom: 20px;
-  border: 2px solid #0e0b0b;
-  padding: 50px;
 }
 
 
@@ -117,6 +123,7 @@ h5{
   margin-top: 50px;
   margin-bottom: 20px;
   font-size: 30px;
+  text-align: center;
 }
 
 .next-5-days {
@@ -138,3 +145,66 @@ h5{
   margin: 0 20px;
 }
 
+.futureday {
+  background-color: #7bc6f1;
+  color: white;
+  font-size: 20px;
+  border: 1px solid #ddd; 
+  border-radius: 10px; 
+  padding: 15px; 
+  margin: 10px; 
+  text-align: center;
+}
+
+
+.weather-icon-0, .weather-icon-1, .weather-icon-2, .weather-icon-3, .weather-icon-4 {
+  width: 50px;
+  height: 50px;
+}
+/* Styles for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 10px;
+  }
+  .search {
+    flex-direction: column;
+  }
+  .search input {
+    margin-bottom: 10px;
+  }
+  .left-container,
+  .center-container {
+    margin: 10px;
+  }
+  .recent-searches button {
+    width: 100%;
+  } 
+  .current-weather {
+    padding: 20px;
+  }
+  .next-5-days {
+    flex-direction: column;
+  }
+  .futureday {
+    margin-bottom: 10px;
+  }
+}
+
+/* Styles for screens between 601px and 1024px (medium-sized screens) */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  header {
+    padding: 15px;
+  }
+  .search input {
+    max-width: 300px;
+  }
+  .recent-searches button {
+    width: 150px;
+  }
+  .current-weather {
+    padding: 20px;
+  }
+  .futureday {
+    margin-bottom: 15px;
+  }
+}

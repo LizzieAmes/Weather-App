@@ -17,16 +17,39 @@
     </div>
   </header>
 
-  <card class="current-weather">
-    <h2>City<span>🌤️</span></h3>
+  <main>
+    <div class="left-container">
+      <h2>Recent Searches</h2>
+    <div class="recent-searches"></div>
+    </div>
+    <div class="center-container">
+  <div class="current-weather">
+    <h3>Today:</h3>
+    <h4 class="city"></h4>
+    <div class="weather-container">
+    <img class="weather-icon" id="current-weather-icon">
     <ul>
-      <li>Temperature: </li>
-      <li>Wind: </li>
-      <li>Humidity: </li>
+      <li class="date"></li>
+      <li class="temp"></li>
+      <li class="wind"></li>
+      <li class="humidity"></li>
     </ul>
     </div>
-  </card>
-  
+    </div>
+    <h5>5 Day Forecast:</h5>
+    <div class="next-5-days">
+      <div class="futuredays">
+        <img class="weather-icon" id="weather-icon-1">
+          <img class="weather-icon" id="weather-icon-2">
+          <img class="weather-icon" id="weather-icon-3">
+          <img class="weather-icon" id="weather-icon-4">
+          <img class="weather-icon" id="weather-icon-5">
+        </div>
+      
+            
+      </div>
+    </div>
+  </main>
 </body>
 <script src="assets/script.js"></script>
 </html>

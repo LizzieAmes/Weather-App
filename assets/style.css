@@ -51,11 +51,90 @@ header {
   cursor: pointer;
 }
 
-.current-weather {
-  border: 2px;
-  outline: 2px;
-  color: rgb(37, 37, 37);
-  margin: auto 0;
-  padding: 20px 20px;
+main {
+  display: flex;
+}
+
+.left-container {
+  margin: 30px;
   text-align: center;
 }
+
+.center-container {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.recent-searches {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recent-searches button {
+  margin-bottom: 5px;
+  border: 0;
+  outline: 0;
+  background: #9b7cd3;
+  color: white;
+  border-radius: 15px;
+  height: 60px;
+  width: 200px;
+  font-size: 15px;
+  cursor: pointer;
+}
+h3 {
+  margin-bottom: 10px;
+}
+
+.current-weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(37, 37, 37); 
+  text-align: center;
+  margin-bottom: 20px;
+  border: 2px solid #0e0b0b;
+  padding: 50px;
+}
+
+
+.weather-icon {
+  width: 50px;
+  height: 50px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+h5{
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.next-5-days {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+
+.futuredays {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  border: 2px solid #0e0b0b;
+  padding: 15px;
+}
+
+.day {
+  margin: 0 20px;
+}
+
